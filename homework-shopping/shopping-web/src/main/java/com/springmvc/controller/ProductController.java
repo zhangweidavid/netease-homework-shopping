@@ -65,6 +65,7 @@ public class ProductController {
         } catch (Exception e) {
             LOGGER.error("getUnPurchasedProducts...fail", GsonUtils.toJSONString(result), e);
         }
+        //异常是不是显示一个错误页面更合适呢？
         return new ModelAndView("index");
     }
 
